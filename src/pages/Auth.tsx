@@ -34,14 +34,14 @@ const Auth = () => {
           options: { emailRedirectTo: `${window.location.origin}/admin` },
         });
         if (error) throw error;
-        toast.success("Ο λογαριασμός δημιουργήθηκε. Σύνδεση...");
+        toast.success("Ο λογαριασμος δημιουργηθηκε. Συνδεση...");
       } else {
         const { error } = await supabase.auth.signInWithPassword({ email, password });
         if (error) throw error;
-        toast.success("Επιτυχής ταυτοποίηση.");
+        toast.success("Επιτυχης ταυτοποιηση.");
       }
     } catch (err) {
-      const msg = err instanceof Error ? err.message : "Αποτυχία ταυτοποίησης";
+      const msg = err instanceof Error ? err.message : "Αποτυχια ταυτοποιησης";
       toast.error(msg);
     } finally {
       setSubmitting(false);
@@ -62,7 +62,7 @@ const Auth = () => {
           to="/"
           className="mb-6 inline-flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-muted-foreground transition-colors hover:text-foreground"
         >
-          <ArrowLeft className="h-3.5 w-3.5" /> Επιστροφή στην αποστολή
+          <ArrowLeft className="h-3.5 w-3.5" /> Επιστροφη στην αποστολη
         </Link>
 
         <div className="border border-border bg-card p-8" style={{ background: "var(--gradient-card)", boxShadow: "var(--shadow-panel)" }}>
@@ -71,7 +71,7 @@ const Auth = () => {
             <span className="font-display text-lg tracking-widest">{BRAND}</span>
           </div>
           <div className="mt-2 font-mono text-[10px] uppercase tracking-[0.3em] text-siren-red">
-            // Περιορισμένη πρόσβαση · Τερματικό διαχειριστή
+            // Περιορισμενη προσβαση · Τερματικο διαχειριστη
           </div>
 
           <div className="mt-6 flex border border-border">
@@ -86,7 +86,7 @@ const Auth = () => {
                     : "bg-transparent text-muted-foreground hover:text-foreground"
                 }`}
               >
-                {m === "login" ? "Σύνδεση" : "Εγγραφή"}
+                {m === "login" ? "Συνδεση" : "Εγγραφη"}
               </button>
             ))}
           </div>
@@ -94,7 +94,7 @@ const Auth = () => {
           <form onSubmit={handleSubmit} className="mt-6 space-y-4">
             <div className="space-y-1.5">
               <Label htmlFor="email" className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
-                Email Αξιωματικού
+                Email Αξιωματικου
               </Label>
               <Input
                 id="email"
@@ -108,7 +108,7 @@ const Auth = () => {
             </div>
             <div className="space-y-1.5">
               <Label htmlFor="password" className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
-                Κωδικός Πρόσβασης
+                Κωδικος Προσβασης
               </Label>
               <Input
                 id="password"
@@ -127,12 +127,12 @@ const Auth = () => {
               className="w-full bg-siren-blue text-white hover:bg-siren-blue/90"
               style={{ boxShadow: "var(--shadow-glow-blue)" }}
             >
-              {submitting ? "Επεξεργασία..." : mode === "login" ? "Ταυτοποίηση" : "Δημιουργία λογαριασμού"}
+              {submitting ? "Επεξεργασια..." : mode === "login" ? "Ταυτοποιηση" : "Δημιουργια λογαριασμου"}
             </Button>
           </form>
 
           <p className="mt-6 font-mono text-[10px] uppercase leading-relaxed tracking-widest text-muted-foreground">
-            ▸ Ο πρώτος λογαριασμός που εγγράφεται λαμβάνει αυτόματα δικαιώματα διαχειριστή.
+            ▸ Ο πρωτος λογαριασμος που εγγραφεται λαμβανει αυτοματα δικαιωματα διαχειριστη.
           </p>
         </div>
       </div>

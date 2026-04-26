@@ -21,11 +21,11 @@ export const SiteHeader = () => {
 
         <nav className="hidden items-center gap-1 font-mono text-xs uppercase tracking-widest md:flex">
           {[
-            ["#dispatch", "Αποστολή"],
-            ["#about", "Σχετικά"],
-            ["#divisions", "Τμήματα"],
-            ["#officers", "Αξιωματικοί"],
-            ["#rules", "Κανόνες"],
+            ["#dispatch", "Αποστολη"],
+            ["#about", "Σχετικα"],
+            ["#divisions", "Τμηματα"],
+            ["#officers", "Αξιωματικοι"],
+            ["#rules", "Κανονες"],
           ].map(([href, label]) => (
             <a
               key={href}
@@ -42,7 +42,7 @@ export const SiteHeader = () => {
             <Button asChild variant="outline" size="sm" className="hidden border-siren-blue/40 text-siren-blue hover:bg-siren-blue/10 hover:text-siren-blue sm:inline-flex">
               <Link to="/admin">
                 <ShieldCheck className="mr-1.5 h-4 w-4" />
-                Διαχειριστής
+                Διαχειριστης
               </Link>
             </Button>
           )}
@@ -53,13 +53,13 @@ export const SiteHeader = () => {
               onClick={() => supabase.auth.signOut()}
             >
               <LogOut className="mr-1.5 h-4 w-4" />
-              Αποσύνδεση
+              Αποσυνδεση
             </Button>
           ) : (
             <Button asChild variant="ghost" size="sm">
               <Link to="/auth">
                 <LogIn className="mr-1.5 h-4 w-4" />
-                Σύνδεση
+                Συνδεση
               </Link>
             </Button>
           )}

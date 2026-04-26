@@ -16,7 +16,7 @@ export const Hero = () => {
       <div className="container relative z-10 flex flex-col items-center py-20 text-center sm:py-28 lg:py-36">
         <div className="mb-6 inline-flex items-center gap-2 border border-border bg-card/60 px-3 py-1 font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground backdrop-blur">
           <span className="h-1.5 w-1.5 animate-strobe rounded-full bg-siren-red" />
-          Φάκελος · 0xJK-2026
+          Φακελος · 0xJK-2026
         </div>
 
         <h1 className="font-display text-4xl font-bold leading-[0.95] tracking-tight sm:text-6xl lg:text-7xl xl:text-8xl">
@@ -28,11 +28,11 @@ export const Hero = () => {
         </h1>
 
         <p className="mt-6 max-w-2xl font-mono text-xs uppercase tracking-[0.25em] text-muted-foreground sm:text-sm">
-          // Τακτικές Επιχειρήσεις · Πίνακας Αποστολής · Στρατολόγηση Ενεργή
+          // Τακτικες Επιχειρησεις · Πινακας Αποστολης · Στρατολογηση Ενεργη
         </p>
 
         <p className="mt-4 max-w-xl text-base text-foreground/80 sm:text-lg">
-          Υπηρέτα. Αποστέλλου. Προστάτευε. Γίνε μέλος της ομάδας που συντονίζει ζωντανές επιχειρήσεις κάθε μέρα στο Discord.
+          Υπηρετα. Αποστελλου. Προστατευε. Γινε μελος της ομαδας που συντονιζει ζωντανες επιχειρησεις καθε μερα στο Discord.
         </p>
 
         <div className="mt-10 flex flex-col items-center gap-3 sm:flex-row">
@@ -44,7 +44,7 @@ export const Hero = () => {
           >
             <a href={DISCORD_INVITE} target="_blank" rel="noopener noreferrer">
               <Megaphone className="h-5 w-5" />
-              Επικοινωνία
+              Επικοινωνια
               <ExternalLink className="h-4 w-4 opacity-60 transition-transform group-hover:translate-x-0.5" />
             </a>
           </Button>
@@ -66,15 +66,15 @@ export const Hero = () => {
         <div className="mt-12 grid w-full max-w-2xl grid-cols-3 gap-3 border-t border-border pt-6 font-mono text-[10px] uppercase tracking-widest text-muted-foreground sm:gap-6 sm:text-xs">
           <div>
             <div className="text-2xl font-bold text-foreground sm:text-3xl">24/7</div>
-            <div className="mt-1">Σε Ετοιμότητα</div>
+            <div className="mt-1">Σε Ετοιμοτητα</div>
           </div>
           <div>
             <div className="text-2xl font-bold text-foreground sm:text-3xl">5</div>
-            <div className="mt-1">Τμήματα</div>
+            <div className="mt-1">Τμηματα</div>
           </div>
           <div>
             <div className="text-2xl font-bold text-siren-red sm:text-3xl animate-blink">●</div>
-            <div className="mt-1">Στρατολόγηση</div>
+            <div className="mt-1">Στρατολογηση</div>
           </div>
         </div>
       </div>

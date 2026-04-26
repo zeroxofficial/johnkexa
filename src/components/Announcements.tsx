@@ -27,20 +27,20 @@ export const Announcements = () => {
     <section id="dispatch" className="border-b border-border py-20 sm:py-24">
       <div className="container">
         <SectionHeading
-          eyebrow="01 / Αποστολή"
-          title="Πίνακας Αποστολής"
-          description="Ενεργά δελτία από τη διοίκηση. Ενημερώνεται καθώς εξελίσσονται οι καταστάσεις."
+          eyebrow="01 / Αποστολη"
+          title="Πινακας Αποστολης"
+          description="Ενεργα δελτια απο τη διοικηση. Ενημερωνεται καθως εξελισσονται οι καταστασεις."
         />
 
         <div className="mt-12 grid gap-4 lg:grid-cols-2">
           {isLoading && (
             <div className="col-span-full font-mono text-sm text-muted-foreground">
-              ▸ Φόρτωση ροής αποστολής...
+              ▸ Φορτωση ροης αποστολης...
             </div>
           )}
           {!isLoading && data?.length === 0 && (
             <div className="col-span-full border border-dashed border-border bg-card/40 p-8 text-center font-mono text-sm text-muted-foreground">
-              Δεν υπάρχουν ενεργές αποστολές αυτή τη στιγμή.
+              Δεν υπαρχουν ενεργες αποστολες αυτη τη στιγμη.
             </div>
           )}
           {data?.map((a) => {

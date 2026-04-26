@@ -20,18 +20,18 @@ export const Officers = () => {
     <section id="officers" className="border-b border-border py-20 sm:py-24">
       <div className="container">
         <SectionHeading
-          eyebrow="04 / Μητρώο"
-          title="Ενεργοί Αξιωματικοί"
-          description="Προσωπικό που βρίσκεται τώρα σε υπηρεσία."
+          eyebrow="04 / Μητρωο"
+          title="Ενεργοι Αξιωματικοι"
+          description="Προσωπικο που βρισκεται τωρα σε υπηρεσια."
         />
 
         <div className="mt-12 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
           {isLoading && (
-            <div className="col-span-full font-mono text-sm text-muted-foreground">▸ Φόρτωση προσωπικού...</div>
+            <div className="col-span-full font-mono text-sm text-muted-foreground">▸ Φορτωση προσωπικου...</div>
           )}
           {!isLoading && data?.length === 0 && (
             <div className="col-span-full border border-dashed border-border p-8 text-center font-mono text-sm text-muted-foreground">
-              Δεν έχουν προστεθεί αξιωματικοί ακόμα.
+              Δεν εχουν προστεθει αξιωματικοι ακομα.
             </div>
           )}
           {data?.map((o) => {
@@ -50,7 +50,7 @@ export const Officers = () => {
                   {o.avatar_url ? (
                     <img
                       src={o.avatar_url}
-                      alt={`Αξιωματικός ${o.name}`}
+                      alt={`Αξιωματικος ${o.name}`}
                       className="h-full w-full object-cover grayscale transition-all group-hover:grayscale-0"
                       loading="lazy"
                     />
@@ -67,7 +67,7 @@ export const Officers = () => {
                 <div className="mt-3 font-display text-base leading-tight">{o.name}</div>
                 {o.badge_number && (
                   <div className="mt-1 font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
-                    Αρ. Ταυτότητας #{o.badge_number}
+                    Αρ. Ταυτοτητας #{o.badge_number}
                   </div>
                 )}
                 {div?.name && (

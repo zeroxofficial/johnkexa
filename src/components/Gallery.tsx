@@ -9,7 +9,13 @@ const IMAGES = [
   { src: "/eidikes_dynameis.png", caption: "Ειδικες Δυναμεις" },
   { src: "/ekpaideuso.png", caption: "Εκπαιδευση" },
   { src: "/image-1.png", caption: "Επιχειρηση" },
-  { src: "/police army.png", caption: "Police & Army" },
+  { src: "/police army.png", caption: "Police Army" },
+  { src: "/peripolia.jpg", caption: "Δυναμικο" },
+  { src: "/ready.png", caption: "Περιπολια" },
+
+
+
+  
 ];
 
 export const Gallery = () => {

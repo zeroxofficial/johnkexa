@@ -13,7 +13,7 @@ const IMAGES = [
   { src: "/peripolia.jpg", caption: "Δυναμικο" },
   { src: "/ready.png", caption: "Περιπολια" },
   { src: "/2026-4-29.png", caption: "2026-4-29" },
-  { src: "/A20.png", caption: "Ο.Π.Κ.Ε" },
+  { src: "/A20.png", caption: "A20" },
   { src: "/DINAMI.png", caption: "Περιπολια" },
   { src: "/DIAS.png", caption: "ΔΙΑΣ" },
 
